@@ -1,0 +1,15 @@
+body {
+    background: rgb(125, 198, 205);
+    color:rgb(45, 45, 45)
+    padding: 10px;
+    font-family: lato;
+}
+#all-contents {
+    max-width: 800px;
+      margin: auto;
+}
+/* navigation menu*/
+nav {
+    background: rgb(239,80,41);
+   margin: 0 auto;
+}
