@@ -11,9 +11,11 @@ body {
 /* navigation menu*/
 nav {
     background: rgb(239,80,41);
-   margin: 0 auto;
+   margin:  auto;
+   margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border-radius: 30px;
 }
 h1 {
     display: flex;
@@ -54,4 +56,8 @@ main {
 }
 h2, h3 {
     margin: 0px;
+}
+#all-contents {
+    max-width: 800px;
+    margin: auto;
 }
