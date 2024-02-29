@@ -68,9 +68,10 @@ createCollectable("diamond", 0, 1)
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-createCannon("right", "wall", 200, 0, 0)
-
-
+createCannon("right", 400 , 1000, 30, 30)
+createCannon("left", 500, 1000, 30, 30)
+createCannon("top", 200, 1000, 30, 30)
+createCannon("bottom", 550, 1000, 30, 30)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
