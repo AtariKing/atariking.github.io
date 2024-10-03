@@ -50,12 +50,12 @@ $(document).ready(function () {
     if (currentShape.color === "red") {
       currentShape.goodBehavior = "bounce";
     } else if (currentShape.color === "blue") {
-      currentShape.goodBehaviour = "blink";
+      currentShape.goodBehavior = "blink";
     } else {
-      currentShape.goodBehaviour = "spin";
+      currentShape.goodBehavior = "spin";
     }
   }
-  console.log(dataShapes);
+
   // TODO 3-a: add a function that handles the static display type
   function handleStatic(data) {
     setBackgroundWithObject(data);
@@ -69,7 +69,11 @@ $(document).ready(function () {
   }
 
   // TODO 5-a: add a function that handles the bad display type
-
+function handleBad(data, repeat){
+  repeat++
+  setBackgroundWithMixed(data, repeat)
+  animationDetails.display = 3
+}
   /////////////////////////////////////////////////
   // BUTTON HANDLERS BELOW HERE (3-b, 4-b, 5-b) ///
   /////////////////////////////////////////////////
@@ -87,6 +91,9 @@ $(document).ready(function () {
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
+    var currentShape =dataShapes[currentIndex]
+    var repeat = currentShape.repeat
+    handleBad(currentShape, repeat)
   }
 
   /////////////////////////////////////////////////
