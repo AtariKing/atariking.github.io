@@ -11,7 +11,9 @@ var highScoreElement = $("#highScore");
 
 // TODO 4a: Create the snake, apple and score variables
 // Game Variables
-
+var snake = {
+  
+}
 // Constant Variables
 var ROWS = 20;
 var COLUMNS = 20;
